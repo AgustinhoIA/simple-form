@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Asian;
+    src: url(../../Documents/fuentes-texto/Asian/Asian.woff);
+}
+
+*{
+    margin: 0;
+}
+.main-panel {
+    padding: 50px;
+    width: 60%;
+}
+.form-panel{
+    display: flex;
+    height: 30%;
+    overflow: auto;
+    width: 100%;
+    background-color: lightgreen;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sidebar-panel {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    background-color: lightpink;
+}
+
+.page-container {
+    display: flex;
+    height: 100vw;
+}
