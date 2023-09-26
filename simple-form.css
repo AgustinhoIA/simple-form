@@ -17,6 +17,7 @@
     width: 40%;
     height: 100%;
     background-color: lightpink;
+    background-image: url(img/sakura-background.jpg);
     border: 1px solid palevioletred;
 }
 
@@ -52,22 +53,27 @@ form {
 }
 
 .input-container {
+    display: flex;
+    flex-direction: column;
     margin-right: 60px;
-    padding: 40px;
+    padding: 10px 40px 10px;
     border: 2px dotted blueviolet;
+    justify-content: space-around;
+    
 }
 
- legend {
+.legend {
+    justify-content: center;
+    padding-left: 40px;
+}
+
+legend {
     height: 30%;
-    text-align: left;
     font-size: x-large;
     font-weight: 700;
-    border: 3px solid black;
-    vertical-align: middle;
+    justify-self: center;
 
 }
-
-
 
 input,
 textarea,
@@ -87,5 +93,5 @@ label,input {
 } 
 
 input {
-    margin-bottom: 20px;
+   
 }
