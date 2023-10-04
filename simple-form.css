@@ -14,7 +14,7 @@
 
 .sidebar-panel {
     display: flex;
-    width: 40%;
+    width: 35%;
     height: 100%;
     background-color: lightpink;
     background-image: url(img/sakura-background.jpg);
@@ -23,7 +23,7 @@
 
 .main-panel {
     padding: 50px;
-    width: 60%;
+    width: 65%;
     padding: 0;
 }
 
@@ -31,7 +31,19 @@
     height: 33%;
 }
 
-
+div.block:first-of-type {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    justify-content: end;
+    gap: 20px;
+    box-sizing: border-box;
+    padding-bottom: 70px;
+    width: 600px;
+    font-size: larger;
+    font-weight: 700;
+    font-family: Asian, arial;
+}
 
 form {
     display: flex;
@@ -90,6 +102,11 @@ label,input {
     flex-direction:column;
 } 
 
-input {
-   
+.button {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.button > p {
+    margin-top: 30px;
 }
