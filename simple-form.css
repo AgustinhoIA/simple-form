@@ -1,6 +1,14 @@
 @font-face {
     font-family: Asian;
-    src: url(../../Documents/fuentes-texto/Asian/Asian.woff);
+    src: url(/fuentes-texto/Asian/asian-webfont.woff) format('woff'),
+         url(/fuentes-texto/Asian/asian-webfont.woff2) format('woff2'),
+         url(/fuentes-texto/Asian/Asian.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Astroviz;
+    src: url(/fuentes-texto/astroviz/astroviz-medium-webfont.woff) format('woff'),
+         url(/fuentes-texto/astroviz/astroviz-medium-webfont.woff2) format('woff2');
 }
 
 *{
@@ -42,7 +50,7 @@ div.block:first-of-type {
     width: 600px;
     font-size: larger;
     font-weight: 700;
-    font-family: Asian, arial;
+    font-family: Astroviz, arial;
 }
 
 form {
