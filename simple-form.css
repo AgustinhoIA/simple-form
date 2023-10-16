@@ -11,10 +11,40 @@
          url(/fuentes-texto/astroviz/astroviz-medium-webfont.woff2) format('woff2');
 }
 
+@font-face {
+    font-family: poppins;
+    src: url(/fuentes-texto/Poppins/poppins-bold-webfont.woff) format('woff'),
+         url(/fuentes-texto/Poppins/poppins-bold-webfont.woff2) format('woff2'),
+         url(/fuentes-texto/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+input {
+    appearance: none; /* For Webkit browsers */
+    -moz-appearance: none; /* For Mozilla Firefox */
+    -webkit-appearance: none; /* For Webkit browsers */
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background-color: transparent;
+    margin: 0;
+    width: auto; 
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    
+    background-color: rgb(226, 230, 228);
 }
 
 .page-container {
@@ -27,7 +57,6 @@
     flex-direction: column;
     width: 35%;
     height: 100%;
-    background-color: lightpink;
     background-image: url(img/imagen_2023-10-09_115607904.png);
 }
 
@@ -35,8 +64,8 @@
     display: flex;
     height: 150px;
     width: 100%;
-    background-color: rgb(85, 83, 83, 0.7);
-    margin-top: 153px;
+    background-color: rgba(170, 167, 167, 0.3);
+    margin-top: 160px;
     padding: 20px;
     
     box-sizing: border-box;
@@ -62,6 +91,7 @@
 
 .block {
     height: 33%;
+    width: auto;
 }
 
 div.block:first-of-type {
@@ -69,13 +99,12 @@ div.block:first-of-type {
     flex-direction: column;
     padding-left: 40px;
     justify-content: end;
-    gap: 20px;
+    gap: 30px;
     box-sizing: border-box;
     padding-bottom: 70px;
     width: 600px;
     font-size: larger;
     font-weight: 700;
-    font-family: Astroviz, arial;
 }
 
 form {
@@ -84,13 +113,18 @@ form {
     width: 100%;
     height: 100%;
     align-self: center;
-    background-color: rgb(234, 214, 227);
+    background-color: rgb(233, 236, 237);
+    
 }
 
 .form-panel{
     display: flex;
     width: 100%;
     height: 100%;
+}
+
+ul.input-container {
+    list-style-type: none;
 }
 
 .input-container {
@@ -115,19 +149,20 @@ legend {
     font-size: x-large;
     font-weight: 700;
     justify-self: center;
-
 }
 
 input,
 textarea,
 select,
 button {
-  border-radius: 5px;  
-  width: 230px;
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 5px;  
+    width: 230px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: inherit;
 }
 
 label,input {
