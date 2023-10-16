@@ -18,23 +18,6 @@
          url(/fuentes-texto/Poppins/Poppins-Bold.ttf) format('truetype');
 }
 
-input {
-    appearance: none; /* For Webkit browsers */
-    -moz-appearance: none; /* For Mozilla Firefox */
-    -webkit-appearance: none; /* For Webkit browsers */
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    background-color: transparent;
-    margin: 0;
-    width: auto; 
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -43,10 +26,23 @@ input {
 }
 
 body{
-    
     background-color: rgb(226, 230, 228);
 }
 
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+input[type="email"] {
+    appearance: none; /* For Webkit browsers */
+    -moz-appearance: none; /* For Mozilla Firefox */
+    -webkit-appearance: none; /* For Webkit browsers */
+    padding: 0;
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 5px;
+    box-shadow: none;
+    line-height: inherit;
+}
 .page-container {
     display: flex;
     height: 70vw;
@@ -102,7 +98,7 @@ div.block:first-of-type {
     gap: 30px;
     box-sizing: border-box;
     padding-bottom: 70px;
-    width: 600px;
+    width: 80%;
     font-size: larger;
     font-weight: 700;
 }
