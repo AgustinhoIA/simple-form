@@ -1,21 +1,20 @@
 @font-face {
-    font-family: Asian;
-    src: url(/fuentes-texto/Asian/asian-webfont.woff) format('woff'),
-         url(/fuentes-texto/Asian/asian-webfont.woff2) format('woff2'),
-         url(/fuentes-texto/Asian/Asian.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: Astroviz;
-    src: url(/fuentes-texto/astroviz/astroviz-medium-webfont.woff) format('woff'),
-         url(/fuentes-texto/astroviz/astroviz-medium-webfont.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: poppins;
+    font-family: poppins-bold;
     src: url(/fuentes-texto/Poppins/poppins-bold-webfont.woff) format('woff'),
          url(/fuentes-texto/Poppins/poppins-bold-webfont.woff2) format('woff2'),
          url(/fuentes-texto/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(/fuentes-texto/Poppins/poppins-light-webfont.woff) format('woff'),
+         url(/fuentes-texto/Poppins/poppins-light-webfont.woff2) format('woff2'),
+}
+
+@font-face {
+    font-family: poppins-lighitalic;
+    src: url(/fuentes-texto/Poppins/poppins-lightitalic-webfont.woff) format('woff'),
+         url(/fuentes-texto/Poppins/poppins-lightitalic-webfont.woff2) format('woff2'),
 }
 
 *{
@@ -63,7 +62,6 @@ input[type="email"] {
     background-color: rgba(170, 167, 167, 0.3);
     margin-top: 160px;
     padding: 20px;
-    
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -99,10 +97,12 @@ div.block:first-of-type {
     box-sizing: border-box;
     padding-bottom: 70px;
     width: 80%;
-    font-size: larger;
+    font-size: x-large;
     font-weight: 700;
 }
-
+.italic {
+    font-family: poppins-lighitalic;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -166,6 +166,9 @@ label,input {
     flex-direction:column;
 } 
 
+label {
+    font-family: poppins-light;
+}
 .button {
     padding-top: 30px;
     padding-left: 40px;
