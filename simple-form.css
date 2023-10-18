@@ -100,6 +100,7 @@ div.block:first-of-type {
     font-size: x-large;
     font-weight: 700;
 }
+
 .italic {
     font-family: poppins-lighitalic;
 }
@@ -159,6 +160,7 @@ button {
     margin: 0;
     box-sizing: border-box;
     background-color: inherit;
+    text-align: center;
 }
 
 label,input {
@@ -176,4 +178,8 @@ label {
 
 .button > p {
     margin-top: 30px;
+}
+
+input:focus-visible {
+    border: 4px solid rgba(112, 166, 205, 0.8);
 }

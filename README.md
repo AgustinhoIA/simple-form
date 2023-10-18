@@ -9,11 +9,9 @@ basic form
 to do:
 css
     add the selectors for invalid, valid and focused
-    change the font of the lebels to poppins thin insted of bold
+        FIX the black border that appears on focus-visible
     style the button submit button
     add a little claymore roomba at the bottom! with his own button
 
 decorate
-    add backgr imgs
-    add fonts
     polish
