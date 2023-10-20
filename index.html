@@ -29,7 +29,9 @@
             </div>
 
             <div class="block 2">
-                <form action="" method="post">
+                <form action="" 
+                      method="post"
+                      id="roomba-f">
                     <div class="legend">
                         <legend>Lets do this!</legend>
                     </div>
@@ -40,12 +42,17 @@
                                 <input type="text" id="name" name="user-name" required>
                             </li>
                             <li>
-                                <label for="password">Password*</label>
-                                <input type="password" id="password" name="user-password" required>
+                                <label for="email">Email*</label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="user-email" 
+                                       placeholder="your@email.com"
+
+                                       required >
                             </li>
                             <li>
-                                <label for="email">Email*</label>
-                                <input type="email" id="email" name="user-email" required>
+                                <label for="password">Password*</label>
+                                <input type="password" id="password" name="user-password" required>
                             </li>
                         </ul>
                         <ul class="input-container 2">
@@ -68,7 +75,7 @@
             </div>
 
             <div class="block 3 button">
-                <button type="submit" >Relase the Claymore Roomba</button>
+                <button type="submit" form="roomba-f">Relase the Claymore Roomba</button>
                 <p class="">Already used your claymore roomba? Buy another one<span style="color: blue;"> here</span></p>
             </div>
         </div>
