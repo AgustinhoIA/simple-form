@@ -66,10 +66,16 @@ input[type="email"] {
     justify-content: center;
     align-items: center;
 }
-
+@keyframes release {
+    from {left: 0px}
+    to {left: 1300px}
+}
 .logo .roomba {
     width: 100px;
     height: 100px;
+    position: relative;
+    animation-name: release;
+    animation-duration: 10s;
 }
 
 .logo .logo-text {
