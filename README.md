@@ -9,9 +9,12 @@ basic form
 to do:
 css
     add the selectors for invalid, valid and focused
-        FIX the black border that appears on focus-visible
     style the button submit button
-    add a little claymore roomba at the bottom! with his own button
+    make 2 buttons
+        1 for submiting form
+        1 for release of roomba
+        style the buttons
+    low priority: make the roomba clean as it advance
 
 decorate
     polish
