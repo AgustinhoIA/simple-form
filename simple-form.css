@@ -71,12 +71,17 @@ input[type="email"] {
     from {left: 0px}
     to {left: 1300px}
 }
+
+.release {
+    position: relative;
+    animation-name: release;
+    animation-duration: 40s;
+}
+
 .logo .roomba {
     width: 100px;
     height: 100px;
-    position: relative;
-    animation-name: release;
-    animation-duration: 10s;
+    
 }
 
 .logo .logo-text {
@@ -110,7 +115,9 @@ div.block:first-of-type {
 
 .italic {
     font-family: poppins-lighitalic;
+    font-size: large;
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -177,6 +184,7 @@ label,input {
 
 label {
     font-family: poppins-light;
+    font-size: large;
 }
 .button {
     padding-top: 30px;
@@ -188,6 +196,7 @@ label {
 }
 
 input:focus {
-    border: solid 2px rgb(64, 171, 242, 0.5);
-    outline: solid 3px rgb(64, 171, 242, 0.3);
+    outline: solid 2px rgba(54, 45, 185, 0.856);
+    box-shadow: 0px 0px 10px 5px rgba(54, 45, 202, 0.9);
+
 }
