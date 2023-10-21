@@ -1,4 +1,4 @@
-const myInput = document.getElementById('myInput');
+const myInput = document.getElementsByClassName('input');
 
 myInput.addEventListener('input', function() {
     if (myInput.value !== '') {
