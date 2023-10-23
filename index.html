@@ -10,7 +10,7 @@
     <div class="page-container">
         <div class="sidebar-panel">
             <div class="logo">
-                <img class="roomba" src="img/claymore_roomba-removebg-preview.png" alt="source: imgflip.com">
+                <img class="roomba" id="roomba" src="img/claymore_roomba-removebg-preview.png" alt="source: imgflip.com">
                 <img class="logo-text" src="img/robot-bodyguard-low-resolution-logo-black-on-transparent-background.png" alt="logo">
             </div>
             <div class="img-credit">
@@ -23,9 +23,9 @@
                     <p>Protect your fortress effortlessly with the Claymore Roomba defense service. Safeguard your sanctuary round the clock, leaving intruders bewildered. 
                         Sign up now and fortify your home with cutting-edge security and convenience.
                     </p>
-                    <p>Sign up <span class="italic">now</span> to get started</p>
+                    <p>Sign up <span class="italic">now</span> to get started.</p>
                 </div>
-                <p>you <span class="italic">know </span>you want to</p>
+                <p>you <span class="italic">know </span>you want to.</p>
             </div>
 
             <div class="block 2">
@@ -39,7 +39,10 @@
                         <ul class="input-container 1">
                             <li>
                                 <label for="name">Name*</label>
-                                <input type="text" id="name" name="user-name" required>
+                                <input type="text" 
+                                       id="name" 
+                                       name="user-name" 
+                                       required>
                             </li>
                             <li>
                                 <label for="email">Email*</label>
@@ -52,21 +55,36 @@
                             </li>
                             <li>
                                 <label for="password">Password*</label>
-                                <input type="password" id="password" name="user-password" required>
+                                <input type="password" 
+                                       id="password" 
+                                       name="user-password"
+                                       minlength="8" 
+                                       required
+                                 >
                             </li>
                         </ul>
                         <ul class="input-container 2">
                             <li>
                                 <label for="lastName">Last name*</label>
-                                <input type="text" name="lastName" id="user-last-name" required>
+                                <input type="text" 
+                                       name="lastName" 
+                                       id="user-last-name" 
+                                       minlength="8"
+                                       required>
                             </li>
                             <li>
                                 <label for="phone">Phone number*</label>
-                                <input type="tel" name="phone" id="user-phone" required>
+                                <input type="tel" 
+                                       name="phone" 
+                                       id="user-phone" 
+                                       required>
                             </li>
                             <li>
                                 <label for="conf-pass">Confirm password*</label>
-                                <input type="password" name="lastName" id="user-conf-pass" required>
+                                <input type="password" 
+                                       name="lastName" 
+                                       id="conf-pass" 
+                                       required>
                             </li>
                         </ul>
                         
@@ -75,8 +93,13 @@
             </div>
 
             <div class="block 3 button">
-                <button type="submit" form="roomba-f">Relase the Claymore Roomba</button>
+                <button form="roomba-f" type="submit" id="submit">Create Account</button>
                 <p class="">Already used your claymore roomba? Buy another one<span style="color: blue;"> here</span></p>
+                <button id="release">
+                    <div class="button-top">Relase the Claymore Roomba</div>
+                    <div class="button-bottom"></div>
+                    <div class="button-base"></div>
+                </button>
             </div>
         </div>
     </div>
